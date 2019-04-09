@@ -12,6 +12,10 @@
 		180C8A8C225B8DE600F6DA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180C8A8A225B8DE600F6DA83 /* Main.storyboard */; };
 		180C8A8E225B8DE700F6DA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180C8A8D225B8DE700F6DA83 /* Assets.xcassets */; };
 		180C8A91225B8DE700F6DA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180C8A8F225B8DE700F6DA83 /* LaunchScreen.storyboard */; };
+		180C8A99225B8EDE00F6DA83 /* SunTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C8A98225B8EDE00F6DA83 /* SunTimes.swift */; };
+		180C8A9B225B8F7F00F6DA83 /* SunTimesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C8A9A225B8F7F00F6DA83 /* SunTimesService.swift */; };
+		18D86634225CFDDC00444E5C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D86633225CFDDC00444E5C /* MapKit.framework */; };
+		18D86636225CFE0000444E5C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D86635225CFE0000444E5C /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		180C8A8D225B8DE700F6DA83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180C8A90225B8DE700F6DA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		180C8A92225B8DE700F6DA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180C8A98225B8EDE00F6DA83 /* SunTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTimes.swift; sourceTree = "<group>"; };
+		180C8A9A225B8F7F00F6DA83 /* SunTimesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTimesService.swift; sourceTree = "<group>"; };
+		18D86633225CFDDC00444E5C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		18D86635225CFE0000444E5C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D86634225CFDDC00444E5C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				180C8A85225B8DE600F6DA83 /* Sunrise */,
 				180C8A84225B8DE600F6DA83 /* Products */,
+				18D86632225CFDDB00444E5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +66,23 @@
 			children = (
 				180C8A86225B8DE600F6DA83 /* AppDelegate.swift */,
 				180C8A88225B8DE600F6DA83 /* ViewController.swift */,
+				18D86635225CFE0000444E5C /* Location.swift */,
+				180C8A98225B8EDE00F6DA83 /* SunTimes.swift */,
+				180C8A9A225B8F7F00F6DA83 /* SunTimesService.swift */,
 				180C8A8A225B8DE600F6DA83 /* Main.storyboard */,
 				180C8A8D225B8DE700F6DA83 /* Assets.xcassets */,
 				180C8A8F225B8DE700F6DA83 /* LaunchScreen.storyboard */,
 				180C8A92225B8DE700F6DA83 /* Info.plist */,
 			);
 			path = Sunrise;
+			sourceTree = "<group>";
+		};
+		18D86632225CFDDB00444E5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18D86633225CFDDC00444E5C /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				180C8A89225B8DE600F6DA83 /* ViewController.swift in Sources */,
+				180C8A9B225B8F7F00F6DA83 /* SunTimesService.swift in Sources */,
+				18D86636225CFE0000444E5C /* Location.swift in Sources */,
+				180C8A99225B8EDE00F6DA83 /* SunTimes.swift in Sources */,
 				180C8A87225B8DE600F6DA83 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +315,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Guled-Ali.Sunrise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -309,7 +333,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Guled-Ali.Sunrise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

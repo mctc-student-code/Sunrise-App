@@ -9,10 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var sunTimes: Results!
+    var location = SunTimesService()
 
+    @IBOutlet weak var sunriseLabel: UILabel!
+    @IBOutlet weak var sunsetLabel: UILabel!
+    
+   // var location: SunTimesService = SunTimesService()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        if sunriseLabel.text != nil {
+            sunriseLabel.text = sunTimes.results.sunrise
+        }
+        
+        
+
     }
 
 
