@@ -8,7 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SunDelegate {
+    func timesReady(suntimes: SunTimes) {
+        if sunriseLabel.text != nil {
+            sunriseLabel.text = sunTimes.results.sunrise
+        }
+        
+    }
+    
     
     var sunTimes: Results!
     var location = SunTimesService()
@@ -24,8 +31,6 @@ class ViewController: UIViewController {
             sunriseLabel.text = sunTimes.results.sunrise
         }
         
-        
-
     }
 
 

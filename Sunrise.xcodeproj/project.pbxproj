@@ -16,6 +16,7 @@
 		180C8A9B225B8F7F00F6DA83 /* SunTimesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C8A9A225B8F7F00F6DA83 /* SunTimesService.swift */; };
 		18D86634225CFDDC00444E5C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D86633225CFDDC00444E5C /* MapKit.framework */; };
 		18D86636225CFE0000444E5C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D86635225CFE0000444E5C /* Location.swift */; };
+		E7764441225D44E700EDE00F /* SunDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7764440225D44E700EDE00F /* SunDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		180C8A9A225B8F7F00F6DA83 /* SunTimesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTimesService.swift; sourceTree = "<group>"; };
 		18D86633225CFDDC00444E5C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		18D86635225CFE0000444E5C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E7764440225D44E700EDE00F /* SunDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				180C8A8D225B8DE700F6DA83 /* Assets.xcassets */,
 				180C8A8F225B8DE700F6DA83 /* LaunchScreen.storyboard */,
 				180C8A92225B8DE700F6DA83 /* Info.plist */,
+				E7764440225D44E700EDE00F /* SunDelegate.swift */,
 			);
 			path = Sunrise;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				18D86636225CFE0000444E5C /* Location.swift in Sources */,
 				180C8A99225B8EDE00F6DA83 /* SunTimes.swift in Sources */,
 				180C8A87225B8DE600F6DA83 /* AppDelegate.swift in Sources */,
+				E7764441225D44E700EDE00F /* SunDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

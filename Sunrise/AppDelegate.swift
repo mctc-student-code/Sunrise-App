@@ -17,8 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
        
+        // TODO get reference to the view controller
         
-        let sunTimesService = SunTimesService()
+        let sunTimesService = SunTimesService(delegate: viewcontroller)
         sunTimesService.fetchSunTimes()
         sunTimesService
         
